@@ -1,0 +1,37 @@
+// Primera Parte
+
+public class Main
+{
+    public static void main(String[] args) {
+        int param1 = 5; 
+        int param2 = 7; 
+        int param3 = 3; 
+        
+       int result = suma(param1, param2, param3);
+       System.out.println(result);
+    }
+    
+    public static int suma(int a, int b, int c){
+        return a+b+c;
+    }
+}
+
+// Segunda Parte
+public class Main
+{
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.SumarPuertas();
+        miCoche.SumarPuertas();
+        System.out.println(miCoche.puertas);
+    }
+}
+
+class Coche{
+    public int puertas = 0;
+    public void SumarPuertas(){
+        this.puertas++;
+    }
+}
+
+
